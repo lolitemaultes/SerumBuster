@@ -503,11 +503,9 @@ def main():
     """Main interactive workflow with clean CLI."""
     global NOTE_DURATION
     
-    # Initial display
     clear_screen()
     show_header()
     
-    # Step 1: Find Serum
     show_section(1, 5, "Finding Serum Installation")
     all_serums = find_all_serum_versions()
     
@@ -576,7 +574,6 @@ def main():
                 input("\nPress Enter to exit...")
                 return
     
-    # Test VST loading
     show_section(1, 5, "Testing VST Loading")
     print(f"Testing: {Path(serum_path).name}")
     print(f"Path: {serum_path}\n")
@@ -591,7 +588,6 @@ def main():
         print("\n✓ VST loaded successfully!")
         input("\nPress Enter to continue...")
     
-    # Step 2: Preset Selection
     show_section(2, 5, "Preset Selection")
     print("  1. Use Serum's INIT preset")
     print("  2. Load single .fxp preset")
@@ -674,7 +670,6 @@ def main():
     
     input("\nPress Enter to continue...")
     
-    # Step 3: Output Directory
     show_section(3, 5, "Output Directory")
     
     if len(presets) == 1:
@@ -690,7 +685,6 @@ def main():
     print(f"\n✓ Output: {base_output_dir}")
     input("\nPress Enter to continue...")
     
-    # Step 4: Note Range
     show_section(4, 5, "Note Range Selection")
     print("  1. Full (C0-G9) - 116 notes")
     print("  2. Piano (A0-C8) - 88 notes")
@@ -718,7 +712,6 @@ def main():
     
     input("\nPress Enter to continue...")
     
-    # Step 5: Performance Settings
     show_section(5, 5, "Performance Settings")
     print(f"Note duration: {NOTE_DURATION} seconds\n")
     custom_duration = input("Press Enter to keep, or enter new duration (seconds) ❯ ").strip()
@@ -744,7 +737,6 @@ def main():
     
     input("\nPress Enter to continue...")
     
-    # Final Summary
     notes_count = len(get_midi_range(start_note, end_note))
     total_samples = notes_count * len(presets)
     
