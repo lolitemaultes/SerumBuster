@@ -1,3 +1,6 @@
+<a href="#serumbuster"><img width="150" alt="sb" src="https://github.com/user-attachments/assets/de8acae3-674e-47fc-8b7e-c4b73c0a411d" /></a> <a href="#fastwasher"><img width="150" alt="FW" src="https://github.com/user-attachments/assets/6321c0da-dd6d-4644-b0b4-87150b70cd83" /></a> <a href="#fastplugger"><img width="150" alt="FP" src="https://github.com/user-attachments/assets/57ed4110-aee5-49ee-81fe-e187286e51b1" /></a>
+
+
 # SerumBuster Toolkit
 
 A comprehensive toolkit for working with Xfer Serum presets and FastTracker 2 instruments. SerumBuster provides three specialized tools for rendering Serum presets to audio and converting sample libraries into FastTracker 2 XI format.
